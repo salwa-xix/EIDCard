@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تهنئة العيد | نادي ريادة الأعمال</title>
+
+  <!-- Google Icons -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+  <!-- Splash -->
+  <div id="splash" class="splash-screen">
+    <div class="splash-stars"></div>
+    <div class="sparkles"></div>
+    <div class="splash-orb"></div>
+
+    <div class="floating-star star-1">✦</div>
+    <div class="floating-star star-2">✦</div>
+    <div class="floating-star star-3">✦</div>
+
+    <div class="splash-inner">
+      <div class="eid-badge">
+        <span class="material-symbols-outlined">auto_awesome</span>
+        <span>عيدكم أجمل</span>
+        <span class="material-symbols-outlined">auto_awesome</span>
+      </div>
+<br>
+      <div class="eid-badge second-badge">
+        <span class="material-symbols-outlined">celebration</span>
+        <span>نادي ريادة الأعمال يهنئكم بالعيد</span>
+        <span class="material-symbols-outlined">celebration</span>
+      </div>
+
+      <h1 class="splash-title">عيد سعيد ومبهج ✨</h1>
+      <p class="splash-note">
+        أيامكم فرح، وإنجازكم يكبر، وعيدكم يليق بطموحكم.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="home-shell hidden" id="mainContent">
+    <div class="page-stars"></div>
+
+    <section class="hero-card reveal-up">
+      <img
+        src="assets/logo.png"
+        alt="شعار النادي"
+        class="club-logo"
+        id="clubLogo"
+      />
+
+      <div class="hero-copy">
+        <p class="eyebrow">Eid Celebration Experience</p>
+
+        <h2 class="special-greeting-title">كل عام وأنتم بخير</h2>
+
+        <p class="special-greeting">
+          يسر نادي ريادة الأعمال أن يهنئكم بحلول عيد الفطر المبارك، أعاده الله عليكم
+          بالفرح والنجاح والبدايات الجميلة، وجعل أيامكم مليئة بالبهجة والإنجاز.
+        </p>
+
+        <div class="home-actions">
+          <a href="cards.html" class="action-btn ghost">
+            <span class="material-symbols-outlined">style</span>
+            <span>بطاقة العيد</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Help Button -->
+  <button class="help-fab" id="helpFab" aria-label="مساعدة">
+    <span class="material-symbols-outlined">support_agent</span>
+  </button>
+
+  <!-- Bot Panel -->
+  <aside class="bot-panel" id="botPanel" aria-hidden="true">
+    <div class="bot-panel-header">
+      <div>
+        <h3>مساعد النادي</h3>
+        <p>اختر سؤالًا جاهزًا</p>
+      </div>
+
+      <button class="bot-close" id="botClose" aria-label="إغلاق">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <div class="bot-messages" id="botMessages">
+      <div class="message bot">
+        أهلًا ✨ أنا هنا لمساعدتك بمعلومات سريعة عن نادي ريادة الأعمال.
+      </div>
+    </div>
+
+    <div class="quick-questions" id="quickQuestions"></div>
+  </aside>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

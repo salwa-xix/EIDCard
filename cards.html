@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>بطاقة العيد</title>
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Google Awesome Icons (Font Awesome) -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+
+<body class="inner-page page-cards">
+
+<div class="page-bg"></div>
+
+<main class="page-shell">
+
+<header class="topbar reveal-up">
+
+<a href="index.html" class="back-link">
+<i class="fa-solid fa-arrow-right"></i>
+الرئيسية
+</a>
+
+
+</header>
+
+<section class="cards-card reveal-up">
+
+<div class="section-heading">
+<p class="eyebrow">Eid Cards</p>
+<h1>بطاقة العيد</h1>
+</div>
+
+<div class="template-grid" id="templateGrid"></div>
+
+<label class="name-field">
+<span>الاسم على البطاقة</span>
+
+<input
+type="text"
+id="nameInput"
+placeholder="اكتب الاسم هنا"
+maxlength="24"
+/>
+
+</label>
+
+<div class="card-preview-wrap">
+
+<div class="card-preview" id="cardPreview">
+
+
+
+<div class="preview-greeting">
+عيدكم فرح ونجاح
+</div>
+
+<div class="preview-name" id="previewName">
+اسمك هنا
+</div>
+
+</div>
+
+</div>
+
+<div class="camera-controls">
+
+<button class="action-btn primary" id="downloadCardBtn">
+
+<i class="fa-solid fa-download"></i>
+تحميل البطاقة
+
+</button>
+
+</div>
+
+<canvas id="cardCanvas" class="hidden-canvas"></canvas>
+
+</section>
+
+</main>
+
+<!-- Help Button -->
+
+<button class="help-fab" id="helpFab" aria-label="مساعدة">
+
+<i class="fa-solid fa-headset"></i>
+
+</button>
+
+<!-- Chat Bot -->
+
+<aside class="bot-panel" id="botPanel" aria-hidden="true">
+
+<div class="bot-panel-header">
+
+<div>
+<h3>مساعد النادي</h3>
+<p>اختر سؤالًا جاهزًا</p>
+</div>
+
+<button class="bot-close" id="botClose" aria-label="إغلاق">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<div class="bot-messages" id="botMessages">
+
+<div class="message bot">
+أهلًا ✨ اختاري سؤالًا، وسيظهر الرد بطريقة دردشة.
+</div>
+
+</div>
+
+<div class="quick-questions" id="quickQuestions"></div>
+
+</aside>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="cards.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تصوير للعيد</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner-page page-camera">
+  <div class="page-bg"></div>
+
+  <main class="page-shell">
+    <header class="topbar reveal-up">
+      <a href="index.html" class="back-link">← الرئيسية</a>
+      <img src="assets/logo.png" alt="شعار النادي" class="top-logo" id="clubLogoTop" />
+    </header>
+
+    <section class="camera-card reveal-up">
+      <div class="section-heading">
+        <p class="eyebrow">Eid Camera</p>
+        <h1>تصوير للعيد</h1>
+        <p>التقط صورتك بإطار عيدي مناسب للجوال وبتفاصيل مستوحاة من فلاتر السناب.</p>
+      </div>
+
+      <div class="camera-stage">
+        <div class="eid-camera-frame">
+          <div class="frame-glow frame-glow-a"></div>
+          <div class="frame-glow frame-glow-b"></div>
+          <div class="frame-glow frame-glow-c"></div>
+
+          <img src="assets/logo.png" alt="شعار النادي" class="frame-logo" id="clubLogoFrame" />
+          <video id="video" playsinline autoplay muted></video>
+          <canvas id="cameraCanvas" class="hidden-canvas"></canvas>
+
+          <div class="eid-filter-text">عيد سعيد</div>
+          <div class="frame-corners">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="camera-controls">
+        <button class="action-btn primary" id="startCameraBtn">فتح الكاميرا</button>
+        <button class="action-btn ghost" id="captureBtn">التقاط الصورة</button>
+        <a class="action-btn soft" id="downloadPhotoBtn" download="eid-photo.png">تحميل الصورة</a>
+      </div>
+    </section>
+  </main>
+
+  <button class="help-fab" id="helpFab" aria-label="مساعدة">
+    <span>؟</span>
+  </button>
+
+  <aside class="bot-panel" id="botPanel" aria-hidden="true">
+    <div class="bot-panel-header">
+      <div>
+        <h3>مساعد النادي</h3>
+        <p>اختر سؤالًا جاهزًا</p>
+      </div>
+      <button class="bot-close" id="botClose" aria-label="إغلاق">×</button>
+    </div>
+    <div class="bot-messages" id="botMessages">
+      <div class="message bot">أهلًا ✨ اسأليني عن النادي أو برامجه.</div>
+    </div>
+    <div class="quick-questions" id="quickQuestions"></div>
+  </aside>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="camera.js"></script>
+</body>
+</html>
